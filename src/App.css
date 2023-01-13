@@ -1,0 +1,17 @@
+*{
+  box-sizing: content-box;
+}
+.form{
+  display:grid;
+  align-items: center;
+  width: 50%;
+  margin-left: 22rem;
+}
+h1{
+  display: grid;
+  margin-left: 5rem;
+}
+h2{
+  font-weight: lighter;
+  margin-left: 2rem;
+}
