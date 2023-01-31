@@ -8,7 +8,7 @@ class AutoComplete extends Component{
             activeSuggestion : 0,
             filteredSuggestions : [],
             showSuggestions: false,
-            userInput : ""
+            userInput : "",
         };
     }
     onChange = e =>{
@@ -57,6 +57,7 @@ class AutoComplete extends Component{
     }
   };
     render(){
+     
         const{
             onChange,
             onClick,
@@ -72,11 +73,11 @@ class AutoComplete extends Component{
         if (showSuggestions && userInput) {
             if (filteredSuggestions.length) {
               suggestionsListComponent = (
-                <ul class="suggestions">
+                <ul className="suggestions">
                   {filteredSuggestions.map((suggestion, index) => {
                     let className;
       
-                    // Flag the active suggestion with a class
+                    // Show the active suggestion with a class
                     if (index === activeSuggestion) {
                       className = "suggestion-active";
                     }
@@ -97,6 +98,7 @@ class AutoComplete extends Component{
             }
     }
     return (
+      <> 
         <Fragment>
           <input
             type="text"
@@ -105,9 +107,12 @@ class AutoComplete extends Component{
             value={userInput}
           />
           {suggestionsListComponent}
+        
         </Fragment>
+      </>
       );
     }
-  }
-  
+    }
+
+
 export default AutoComplete;

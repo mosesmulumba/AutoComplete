@@ -4,3 +4,6 @@ input{
 .suggestions{
   list-style-type: none;
 }
+className:hover{
+  background-color: #ccc;
+}

@@ -7,7 +7,7 @@ function App() {
     <div className='form'>
       <h1>React AutoComplete Demo</h1>
       <h2>Start typing and experience the autocomplete wizardly !</h2>
-      <AutoComplete suggestions={["kellen","moses","mukisa","kelmo","able","hillary"]} />
+      <AutoComplete suggestions={["Derrick","Moses","Mukisa","Kelmo","Able","Hillary","Apple","Kampala","Jinja","Computer","Frontend","Mira","Docker","Cloud"]} />
     </div>
   );
 }
